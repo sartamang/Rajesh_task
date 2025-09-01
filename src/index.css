@@ -1,0 +1,15 @@
+/*font-Outfit*/
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playwrite+AU+QLD:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-blue: #156eC0;
+    --font-primary: "Quicksand", mono;
+    --font-secondary: "Raleway", "sans-serif";
+    --font-tirtary: "Outfit", "sans-serif";
+}
+
+*{
+    font-family: var(--font-tirtary);
+}
