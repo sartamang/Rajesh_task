@@ -2,7 +2,7 @@ import React, { Children, useEffect, useState } from 'react'
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 
-const Carousel = ({children: image, autoSlide = false, autoSlideInterval=3000}) => {
+const Carousel = ({children: image, autoSlide = false, autoSlideInterval=3500}) => {
    
     const [current, setCurrent] = useState(0)
 
