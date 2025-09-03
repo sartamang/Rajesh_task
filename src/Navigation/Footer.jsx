@@ -74,7 +74,7 @@ const Footer = () => {
                                     <Link to="">Admisson</Link>
                                 </li>
                                 <li className="pb-2 hover:text-blue-900 duration-300">
-                                    <Link to="">Program / Courses</Link>
+                                    <Link to="/program">Program / Courses</Link>
                                 </li>
                                 <li className="pb-2 hover:text-blue-900 duration-300">
                                     <Link to="">Campus Life</Link>

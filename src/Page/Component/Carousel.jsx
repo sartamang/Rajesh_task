@@ -31,15 +31,15 @@ const Carousel = ({children: image, autoSlide = false, autoSlideInterval=3500}) 
             </div>
 
             {/* button */}
-            <div className="absolute inset-0 flex justify-between px-2 items-center">
+            <div className="absolute inset-0 flex justify-between px-2 items-center pointer-events-none">
                 <button 
-                className=" bg-gray-200 rounded-full hover:bg-gray-300 duration-200 ease-in-out cursor-pointer"
+                className=" bg-gray-200 rounded-full hover:bg-gray-300 duration-200 ease-in-out cursor-pointer pointer-events-auto"
                 onClick={previous}
                 >
                     <MdChevronLeft size={35}/>
                 </button>
                 <button 
-                className=" bg-gray-200 rounded-full hover:bg-gray-300 duration-200 ease-in-out cursor-pointer"
+                className=" bg-gray-200 rounded-full hover:bg-gray-300 duration-200 ease-in-out cursor-pointer pointer-events-auto"
                 onClick={next}
                 >
                     <MdChevronRight size={35}/>
