@@ -22,7 +22,7 @@ const image = [
         title2 = "Business College"
         Content = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae omnis enim repellat ipsa officiis eius maxime aliquid commodi quaerat totam, laudantium quasi alias itaque ratione architecto, veritatis facere rerum atque."
       />
-      <Button Contact="Contact us" text = "text-white" bg = "bg-transparent" hoverbg="bg-white"/>
+      <Button Contact="Contact us" text = "text-white" bg = "bg-transparent" hoverbg="hover:bg-white" hovertext="hover:text-black"/>
       </div>
     )
   },
@@ -35,7 +35,7 @@ const image = [
           title2 = "Business College"
           Content = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae omnis enim repellat ipsa officiis eius maxime aliquid commodi quaerat totam, laudantium quasi alias itaque ratione architecto, veritatis facere rerum atque."
       />
-      <Button Contact="Contact us" text= "text-white" bg="bg-transparent"/>
+      <Button Contact="Contact us" text= "text-white" bg="bg-transparent" hoverbg="hover:bg-white" hovertext="hover:text-black"/>
       </div>
     )
   },
@@ -48,7 +48,7 @@ const image = [
         title2 = "Business College"
         Content = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae omnis enim repellat ipsa officiis eius maxime aliquid commodi quaerat totam, laudantium quasi alias itaque ratione architecto, veritatis facere rerum atque."
       />
-      <Button Contact="Contact us" text="text-white" bg="bg-transparent"/>
+      <Button Contact="Contact us" text="text-white" bg="bg-transparent" hoverbg="hover:bg-white" hovertext="hover:text-black"/>
       </div>
     )
   },
@@ -236,7 +236,7 @@ const Home = () => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                         <Card_2 
                         img="./2.jpg"
-                        title = "PCMS Signs MoU with Global Business..."
+                        title = "PCMS Signs MoU with Global Business"
                         content="Strengthening our global ties, this MoU pathways for student exchang programs and collaborative research."
                         date="Aug 18, 2025"
                         />
@@ -290,22 +290,26 @@ const Home = () => {
                     <h1 className="text-4xl text-green-700 font-bold">
                       Career Growth Starts Here 
                     </h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-200 w-full">
-                      <div className="object-cover">
-                        <img src={"1.jpg"}></img>
-                      </div>
-                      <div className="text-justify px-[10%] md:pr-[30%] md:pl-[2%] flex flex-col justify-center space-y-7">
-                        <p className="text-gray-600">
-                          At PCMS, we prepare students to be industry-ready from day one. Our placement call connects with top recruiters, offering training, guidance, and opportunities through internships, workshops, and campus drives bridging the gap between talent and opportunity. 
-                        </p>
-                        <ul className="list-disc list-inside space-y-1 text-gray-600">
-                          <li>95% Placement Rte over the past 3 years</li>
-                          <li>300+ Industry Partnership with leading companies</li>
-                          <li>50+ On-Campus Drives anually</li>
-                          <li>Career-focused workshop & mock interviews sessions</li>
-                          <li>Strong alumni network across diverse industries</li>
-                        </ul>
-                        <Button Contact="Join Us" text="text-green"/>
+                    <div className="bg-gray-200 w-full">
+                      <div className="grid grid-cols-1 md:grid-cols-2 ">
+                        <div className="object-cover">
+                          <img src={"1.jpg"}></img>
+                        </div>
+                        <div className="space-y-7 px-[10%] md:pr-[30%] md:pl-[2%] md:pt-[4%]">
+                          <div className="text-justify  flex flex-col justify-center space-y-7">
+                            <p className="text-gray-600">
+                              At PCMS, we prepare students to be industry-ready from day one. Our placement call connects with top recruiters, offering training, guidance, and opportunities through internships, workshops, and campus drives bridging the gap between talent and opportunity. 
+                            </p>
+                            <ul className="list-disc list-inside space-y-1 text-gray-600">
+                              <li>95% Placement Rte over the past 3 years</li>
+                              <li>300+ Industry Partnership with leading companies</li>
+                              <li>50+ On-Campus Drives anually</li>
+                              <li>Career-focused workshop & mock interviews sessions</li>
+                              <li>Strong alumni network across diverse industries</li>
+                            </ul>
+                          </div>
+                          <Button Contact="Join Us" text="text-green" hoverbg="hover:bg-green" hovertext="hover:text-white"/>
+                        </div>
                       </div>
                     </div>
                 </div>
@@ -348,7 +352,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <Button Contact="Join Us" text="text-white"/>
+                    <Button Contact="Join Us" text="text-white" hoverbg="hover:bg-white" hovertext="hover:text-black"/>
                   </div>
                 </div>
               </div>

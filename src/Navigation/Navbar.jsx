@@ -5,6 +5,7 @@ import ResponsiveMenu from './Component/ResponsiveMenu';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const[active, setActive] = useState("Home")
 
    useEffect (() => {
     const handleHamburger = () => {
@@ -29,8 +30,17 @@ const Navbar = () => {
                         </li>
                         {/* list/menu */}
                         <div className='hidden md:flex md:gap-6 gap-8'>
-                            <li><Link to="/" className="text-white inline-block w-13 text-center text-sm border-b-2">Home</Link></li>
-                            <li><Link to="/program" className="text-white text-sm inline-block w-25 text-center hover:border-b-2 ">Our Programs</Link></li>
+                            <li>
+                                <Link to="/" 
+                                className={`text-white inline-block w-13 text-center text-sm border-b-2 `}
+                                >Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/program" 
+                                className={`text-white text-sm inline-block w-25 text-center border-b-2 ${active == "Our Programs" ? "border-white" : "border-transparent"} `}
+                                onClick={() => setActive("Our Programs")}
+                                >Our Programs</Link>
+                            </li>
                             <li><Link to="" className="text-white text-sm inline-block w-25 text-center hover:border-b-2 ">News & Events</Link></li>
                             <li><Link to="" className="text-white text-sm inline-block w-30 text-center hover:border-b-2 ">Carrer Placemnt</Link></li>
                             <li><Link to="" className="text-white text-sm inline-block w-23 text-center hover:border-b-2 ">Campus Life</Link></li>

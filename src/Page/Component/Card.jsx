@@ -13,10 +13,10 @@ const Card = ({img, title, content}) => {
                     <h1 className="font-bold text-3xl text-green-600">
                         {title}
                     </h1>
-                    <p>
+                    <p className="line-clamp-2">
                         {content}
                     </p>
-                    <Button Contact="Learn More" text= "text-green-600" bg = "bg-transparent" hoverbg="hover:bg-green-600"/>
+                    <Button Contact="Learn More" text= "text-green-600" bg = "bg-transparent" hoverbg="hover:bg-green-600" hovertext="hover:text-white"/>
                 </div>
             </div>
         </div>
