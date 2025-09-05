@@ -9,6 +9,7 @@ import Card from './Component/Card'
 import Card_1 from './Component/Card_1'
 import Card_2 from './Component/Card_2'
 import Card_3 from './Component/Card_3'
+import Carousel_1 from './Component/Carousel_1'
 
 
 
@@ -69,7 +70,7 @@ const Home = () => {
                         <div className="relative w-full flex-shrink-0">
                           <img 
                           src={images.src} 
-                            className="w-full h-[100vh] object-cover"
+                          className="w-full h-[100vh] object-cover"
                           />
 
                           {/* vintage effect */}
@@ -365,8 +366,8 @@ const Home = () => {
                       Our Affilations
                     </h1>
                   </div>
-                  <div>
-                    Sliders aaunxa aba..sururururur
+                  <div className="space-x-6">
+                    <Carousel_1 />
                   </div>
                 </div>
               </div>

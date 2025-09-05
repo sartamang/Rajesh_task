@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import { IoMenu } from "react-icons/io5";
 import ResponsiveMenu from './Component/ResponsiveMenu';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    const[active, setActive] = useState("Home")
 
+    //active link 
+    const location = useLocation()
+    let subpage = location.pathname.split('/')?.[1]
+    function Linkness (type = null ) {
+        let classes = ''
+        if (type === subpage){
+            classes += 'border-b-2'
+        }
+        else {
+            classes += 'border-transparent'
+        }
+        return classes
+    }
+
+    //hamburger disappering a
    useEffect (() => {
     const handleHamburger = () => {
         if (window.innerWidth >= 768){
@@ -16,6 +30,8 @@ const Navbar = () => {
     window.addEventListener('resize', handleHamburger)
     return () => window.removeEventListener('resize', handleHamburger)
    },[])
+
+   
   return (
     <>
         <nav className="w-full">
@@ -32,13 +48,13 @@ const Navbar = () => {
                         <div className='hidden md:flex md:gap-6 gap-8'>
                             <li>
                                 <Link to="/" 
-                                className={`text-white inline-block w-13 text-center text-sm border-b-2 `}
+                                className={`text-white inline-block w-13 text-center text-sm border-b-2 ${Linkness('')}`}
                                 >Home</Link>
                             </li>
                             <li>
                                 <Link to="/program" 
-                                className={`text-white text-sm inline-block w-25 text-center border-b-2 ${active == "Our Programs" ? "border-white" : "border-transparent"} `}
-                                onClick={() => setActive("Our Programs")}
+                                className={`text-white text-sm inline-block w-25 text-center border-b-2 ${Linkness('program')}`}
+                                
                                 >Our Programs</Link>
                             </li>
                             <li><Link to="" className="text-white text-sm inline-block w-25 text-center hover:border-b-2 ">News & Events</Link></li>
