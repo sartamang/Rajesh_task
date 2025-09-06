@@ -7,7 +7,7 @@ const Card_4 = ({img, title, subtitle, stream, msh, duration, eligibity, feature
         <div className="bg-gray-100 text-gray-600">
             <div className="px-[15%] grid grid-cols-1 md:grid-cols-2">
                 <div>
-                    <img src={img} className="cover-fill w-full h-full"></img>
+                    <img src={`${img}`} className="cover-fill w-full h-full" />
                 </div>
                 <div className="pl-5 py-10 space-y-5">
                     <div className="font-bold text-2xl">

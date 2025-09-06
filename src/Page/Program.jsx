@@ -16,7 +16,7 @@ const Program = () => {
                 <div className="relative">
                     <img src="1.jpg" className="object-cover w-full h-[400px]"></img>
                     <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
-                    <div className="absolute inset-0 text-white font-bold text-5xl pt-[13%] flex justify-center">
+                    <div className="absolute inset-0 text-white font-bold text-5xl md:pt-[13%] pt-[40%] flex justify-center">
                         <h1>Our Program</h1>
                     </div>
                 </div>
@@ -117,8 +117,8 @@ const Program = () => {
 
                 {/* have a query */}
                 <div className="min-h-[70vh] bg-green">
-                    <div className="px-[20%] py-[5%] grid grid-cols-1 md:grid-cols-2">
-                        <div className="flex flex-col justify-center space-y-8">
+                    <div className="md:px-[20%] md:py-[5%] px-[10%] py-[10%] grid grid-cols-1 md:grid-cols-2 space-y-10">
+                        <div className="flex flex-col justify-center space-y-8 md:pt-0 pt-10">
                             <div className="text-center text-4xl font-semibold text-white">
                                 <p>Ready to begin your </p>
                                 <p>journey with us?</p>

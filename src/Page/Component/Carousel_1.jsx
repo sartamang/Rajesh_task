@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import {motion, useAnimation} from 'framer-motion'
 
 const images = [
-    "./1.jpg",
-    "./2.jpg",
-    "./3.jpg"
+    "1.jpg",
+    "2.jpg",
+    "3.jpg"
 ]
 
 const Carousel_1 = () => {
@@ -24,7 +24,7 @@ const Carousel_1 = () => {
                 {x: ["100%", "0%", "-100%", "-50%"],
                 transition : {
                     repeat: Infinity,
-                    duration: 10,
+                    duration: 20,
                     ease: "linear"
                 }
             })}

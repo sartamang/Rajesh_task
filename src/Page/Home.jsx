@@ -15,7 +15,7 @@ import Carousel_1 from './Component/Carousel_1'
 
 const image = [
   { 
-    src: '/1.jpg',
+    src: "1.jpg",
     content: (
       <div className="space-y-7">
         <ImageConent 
@@ -28,7 +28,7 @@ const image = [
     )
   },
   {
-    src: '/2.jpg',
+    src: "2.jpg",
     content: (
       <div className="space-y-7">
         <ImageConent 
@@ -41,7 +41,7 @@ const image = [
     )
   },
   {
-    src: '/3.jpg',
+    src: "3.jpg",
     content: (
       <div className="space-y-7">
         <ImageConent 
@@ -119,7 +119,7 @@ const Home = () => {
                         </p>
                       </div>
                       <div className="cover-fill">
-                        <img src={"1.jpg"}></img>
+                        <img src={"1.jpg"} />
                       </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@ const Home = () => {
                         />
                       </div>
                       <div className="flex justify-end pr-[11%]">
-                        <Button Contact="Read more" text="text-white"/>
+                        <Button Contact="Read more" text="text-white" hoverbg='hover:bg-white' hovertext='hover:text-green'/>
                       </div>
                       <div className="px-[15%] space-y-10">
                         <div>
@@ -286,7 +286,7 @@ const Home = () => {
               </div>
 
               {/* Carrer growth starts here */}
-              <div className="min-h-[90vh] flex flex-col items-center">
+              <div className="md:min-h-[90vh] min-h-[100vh] flex flex-col items-center">
                 <div className="py-[8%] flex flex-col items-center space-y-10">
                     <h1 className="text-4xl text-green-700 font-bold">
                       Career Growth Starts Here 
@@ -294,9 +294,9 @@ const Home = () => {
                     <div className="bg-gray-200 w-full">
                       <div className="grid grid-cols-1 md:grid-cols-2 ">
                         <div className="object-cover">
-                          <img src={"1.jpg"}></img>
+                          <img src={"1.jpg"} />
                         </div>
-                        <div className="space-y-7 px-[10%] md:pr-[30%] md:pl-[2%] md:pt-[4%]">
+                        <div className="space-y-7 px-[10%] md:pr-[30%] md:pl-[2%] md:pt-[4%]  py-[10%] ">
                           <div className="text-justify  flex flex-col justify-center space-y-7">
                             <p className="text-gray-600">
                               At PCMS, we prepare students to be industry-ready from day one. Our placement call connects with top recruiters, offering training, guidance, and opportunities through internships, workshops, and campus drives bridging the gap between talent and opportunity. 
@@ -326,25 +326,25 @@ const Home = () => {
                       </h1>
                     </div>
                     <div className="space-y-10">
-                      <div className="grid grid-cols-2 gap-5">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                          <img src="./1.jpg" className="rounded-sm"></img>
+                          <img src={"1.jpg"} className="rounded-sm" />
                         </div>
                         <div className="rounded-sm bg-blue-1 flex items-center px-5 text-white">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias possimus reiciendis voluptate ratione blanditiis, ab esse! Nesciunt officia sequi, inventore minus error ipsam eius perspiciatis, placeat saepe amet consectetur?
                         </div>
                       </div>
-                      <div className="grid grid-cols-2 gap-5">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="rounded-sm bg-blue-1 flex items-center px-5 text-white">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias possimus reiciendis voluptate ratione blanditiis, ab esse! Nesciunt officia sequi, inventore minus error ipsam eius perspiciatis, placeat saepe amet consectetur?
                         </div>
                         <div>
-                          <img src="./1.jpg" className="rounded-sm"></img>
+                          <img src={"1.jpg"} className="rounded-sm" />
                         </div>
                       </div>
-                      <div className="grid grid-cols-2 gap-5">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                          <img src="./1.jpg" className="rounded-sm"></img>
+                          <img src={"1.jpg"} className="rounded-sm" />
                         </div>
                         <div className="rounded-sm bg-blue-1 flex items-center px-5 text-white">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias possimus reiciendis voluptate ratione blanditiis, ab esse! Nesciunt officia sequi, inventore minus error ipsam eius perspiciatis, placeat saepe amet consectetur?
@@ -359,14 +359,14 @@ const Home = () => {
               </div>
 
               {/* Our affilations */}
-              <div className="min-h-[60vh]">
+              <div className="md:min-h-[50vh] min-h-[40vh]">
                 <div className="py-[5%] px-[20%] space-y-10">
                   <div>
                     <h1 className="text-blue font-bold text-4xl text-center">
                       Our Affilations
                     </h1>
                   </div>
-                  <div className="space-x-6">
+                  <div className="space-x-6 ">
                     <Carousel_1 />
                   </div>
                 </div>

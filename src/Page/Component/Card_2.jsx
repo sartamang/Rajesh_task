@@ -7,7 +7,7 @@ const Card_2 = ({img, title, content, date}) => {
         <div className="bg-white shadow-lg rounded-lg">
             <div className="space-y-0">
                 <div className="px-3 pt-3">
-                    <img src={img} className="rounded-sm md:h-[150px] md:w-full md:object-cover"></img>
+                    <img src={`${img}`} className="rounded-sm md:h-[150px] md:w-full md:object-cover" />
                 </div>
                 <div className="px-3 py-1 space-y-1">
                     <div className="font-semibold text-xl text-gray-600 line-clamp-1">
